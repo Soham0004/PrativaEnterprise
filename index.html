@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prativa Enterprise | Premier Construction & Renovation in Kolkata</title>
+    <meta name="description" content="Prativa Enterprise offers expert residential & commercial construction, renovation, and interior design services in Kolkata. Building your dreams with quality and trust. Get a free quote!">
+    
+    <!-- SEO: Google LocalBusiness Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GeneralContractor",
+      "name": "Prativa Enterprise",
+      "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop",
+      "@id": "https://prativaenterprise.com",
+      "url": "https://prativaenterprise.com",
+      "telephone": "+919874494195",
+      "priceRange": "₹50000 - ₹5000000",
+      "description": "Premier general contractor in Kolkata specializing in new construction, home renovations, and commercial projects.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kolkata",
+        "addressLocality": "Kolkata",
+        "addressRegion": "West Bengal",
+        "postalCode": "700001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 22.5726,
+        "longitude": 88.3639
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "152"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Tailwind Configuration -->
+    <script src="tailwind-config.js"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-gray-800 antialiased bg-[#D9D7D7] relative pb-20 md:pb-0">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-40 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20"> 
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <img src="assets/Only Logo circle Color BG.png" alt="Prativa Enterprise Logo" class="h-16 w-16 object-contain">
+                    <div>
+                        <h1 class="font-bold text-xl text-white leading-tight">Prativa Enterprise</h1>
+                        <p class="text-[11px] font-semibold tracking-wider uppercase text-gray-300">From Foundation To Finish</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="nav-link text-white font-medium"><span class="nav-link-text">Services</span></a>
+                    <a href="#projects" class="nav-link text-white font-medium"><span class="nav-link-text">Projects</span></a>
+                    <a href="#about" class="nav-link text-white font-medium"><span class="nav-link-text">About Us</span></a>
+                    <a href="#testimonials" class="nav-link text-white font-medium"><span class="nav-link-text">Testimonials</span></a>
+                    <div class="flex items-center gap-2 lg:gap-3">
+                        <a href="tel:+919874494195" class="navbar-call-btn bg-white hover:bg-gray-50 text-gray-900 px-4 lg:px-5 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg shadow-white/10 hover:shadow-white/20 flex items-center gap-1.5 transform hover:-translate-y-0.5">
+                            <i class="navbar-call-icon ph-fill ph-phone-call text-base"></i>
+                            <span class="navbar-call-text">9874494195</span>
+                        </a>
+                        <a href="tel:+919147371778" class="navbar-call-btn bg-white hover:bg-gray-50 text-gray-900 px-4 lg:px-5 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg shadow-white/10 hover:shadow-white/20 flex items-center gap-1.5 transform hover:-translate-y-0.5">
+                            <i class="navbar-call-icon ph-fill ph-phone-call text-base"></i>
+                            <span class="navbar-call-text">9147371778</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-brand-primary focus:outline-none p-2">
+                        <i class="ph ph-list text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Restored & Upgraded Dropdown Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-b border-gray-100 absolute w-full left-0 shadow-xl rounded-b-2xl z-30 top-20">
+            <div class="px-4 pt-4 pb-4 space-y-1">
+                <a href="#services" class="mobile-nav-link block px-4 py-3 text-base font-semibold text-gray-700 rounded-xl">
+                    <i class="ph-fill ph-wrench mr-2 text-brand-primary/70"></i> <span class="mobile-nav-text">Services</span>
+                </a>
+                <a href="#projects" class="mobile-nav-link block px-4 py-3 text-base font-semibold text-gray-700 rounded-xl">
+                    <i class="ph-fill ph-buildings mr-2 text-brand-primary/70"></i> <span class="mobile-nav-text">Projects</span>
+                </a>
+                <a href="#about" class="mobile-nav-link block px-4 py-3 text-base font-semibold text-gray-700 rounded-xl">
+                    <i class="ph-fill ph-info mr-2 text-brand-primary/70"></i> <span class="mobile-nav-text">About Us</span>
+                </a>
+                <a href="#testimonials" class="mobile-nav-link block px-4 py-3 text-base font-semibold text-gray-700 rounded-xl">
+                    <i class="ph-fill ph-star mr-2 text-brand-primary/70"></i> <span class="mobile-nav-text">Testimonials</span>
+                </a>
+            </div>
+
+            <!-- Contact/Action Block at Bottom -->
+            <div class="p-4 border-t border-gray-100 bg-gray-50 rounded-b-2xl">
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 text-center">Get in Touch</p>
+                <div class="flex gap-3">
+                    <a href="#contact" class="flex-1 text-center bg-gray-900 text-white font-bold py-3 rounded-xl shadow-md shadow-gray-900/20 hover:bg-gray-800 transition-colors text-sm">
+                        Book Online
+                    </a>
+                    <a href="tel:+919874494195" class="flex-1 flex items-center justify-center gap-2 text-center bg-white border border-gray-300 text-gray-800 font-bold py-3 rounded-xl shadow-sm hover:border-brand-primary transition-colors text-sm">
+                        <i class="ph-fill ph-phone-call text-brand-primary"></i> Call Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-16 lg:pt-44 lg:pb-24 overflow-hidden bg-white">
+        <div class="absolute inset-0 hero-pattern"></div>
+        <div class="absolute top-0 right-0 -mr-24 -mt-24 w-[500px] h-[500px] rounded-full bg-amber-50 blur-3xl opacity-80"></div>
+        <div class="absolute bottom-0 left-0 -ml-24 -mb-24 w-96 h-96 rounded-full bg-yellow-50 blur-3xl opacity-80"></div>
+        <div id="particles" class="absolute inset-0 pointer-events-none overflow-hidden"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 text-brand-primary-dark font-semibold text-sm mb-6 border border-amber-200 shadow-sm reveal">
+                        <span class="relative flex h-3 w-3">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-primary opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-primary"></span>
+                        </span>
+                        Licensed & Insured Contractor in Kolkata
+                    </div>
+                    <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-dark leading-[1.12] mb-6 reveal">
+                        From Concept to<br>
+                        <span class="hero-gradient-text">Completion</span> <br>
+                        We Build It All
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0 reveal">
+                        Your trusted partner for residential and commercial construction in Kolkata. We deliver quality, integrity, and satisfaction from foundation to finish.
+                    </p>
+
+                    <!-- Primary Actions -->
+                    <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mb-8 reveal">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#DA7907] text-white font-bold text-base shadow-lg shadow-[#DA7907]/30 quote-btn-animated text-center">
+                            Get a Free Quote
+                        </a>
+                        <a href="tel:+919874494195" class="call-now-cta w-full sm:w-auto px-8 py-4 rounded-xl bg-amber-50 text-gray-900 font-bold text-lg shadow-sm border border-amber-200 hover:bg-amber-100 transition-all flex items-center justify-center gap-2">
+                            <i class="ph-fill ph-phone text-xl text-amber-600"></i>
+                            <span class="call-now-text">Call Now</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Trust Indicators -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 text-sm font-bold text-gray-700 reveal">
+                        <div class="flex items-center gap-1.5 bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-200 shadow-sm">
+                            <i class="ph-fill ph-shield-check text-brand-primary text-lg"></i> <span>On-Time Delivery</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-200 shadow-sm">
+                            <i class="ph-fill ph-gear text-brand-primary text-lg"></i> <span>Quality Materials</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-200 shadow-sm">
+                            <i class="ph-fill ph-clock text-brand-primary text-lg"></i> <span>Transparent Pricing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="relative hidden lg:block reveal-right">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl z-10 border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop" alt="Professional construction site with workers" class="w-full h-[500px] object-cover object-center transform hover:scale-105 transition-transform duration-700">
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 text-white text-sm font-medium">
+                            Our dedicated team building a new project in Kolkata.
+                        </div>
+                        
+                        <!-- Google Review Floating Badge -->
+                        <div class="absolute -top-6 -right-6 bg-yellow-100 p-4 rounded-xl shadow-xl border border-yellow-300 flex flex-col gap-1 items-start animate-bounce" style="animation-duration: 4s;">
+                            <i class="ph-fill ph-medal text-[#DA7907] text-2xl mb-1"></i>
+                            <div class="flex text-amber-500 text-sm">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                            </div>
+                            <p class="font-bold text-gray-800 text-lg leading-none mt-1">4.9/5</p>
+                            <p class="text-[10px] text-gray-500 font-semibold uppercase">150+ Projects</p>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-brand-primary rounded-2xl transform translate-x-4 translate-y-4 -z-10 opacity-20"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Stats Row -->
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-0 grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3 mt-12 sm:mt-14 reveal" style="transition: delay 0.42s;">
+            <div class="bg-white rounded-xl p-3 sm:p-4 text-center shadow-soft border border-gray-100 hover:border-brand-primary/20 hover:shadow-md transition-all">
+                <p class="text-2xl sm:text-3xl font-extrabold text-brand-primary whitespace-nowrap"><span class="counter-val" data-target="20">0</span>+</p>
+                <p class="text-xs sm:text-sm text-gray-500 font-semibold mt-1">Years Experience</p>
+            </div>
+            <div class="bg-white rounded-xl p-3 sm:p-4 text-center shadow-soft border border-gray-100 hover:border-brand-primary/20 hover:shadow-md transition-all">
+                <p class="text-2xl sm:text-3xl font-extrabold text-brand-primary whitespace-nowrap"><span class="counter-val" data-target="500">0</span>+</p>
+                <p class="text-xs sm:text-sm text-gray-500 font-semibold mt-1">Happy Customers</p>
+            </div>
+            <div class="bg-white rounded-xl p-3 sm:p-4 text-center shadow-soft border border-gray-100 hover:border-brand-primary/20 hover:shadow-md transition-all">
+                <p class="text-2xl sm:text-3xl font-extrabold text-brand-primary whitespace-nowrap"><span class="counter-val" data-target="150">0</span>+</p>
+                <p class="text-xs sm:text-sm text-gray-500 font-semibold mt-1">Projects Completed</p>
+            </div>
+            <div class="bg-white rounded-xl p-3 sm:p-4 text-center shadow-soft border border-gray-100 hover:border-brand-primary/20 hover:shadow-md transition-all">
+                <p class="text-2xl sm:text-3xl font-extrabold text-brand-primary whitespace-nowrap">4.9<span class="text-yellow-400 text-xl sm:text-2xl">★</span></p>
+                <p class="text-xs sm:text-sm text-gray-500 font-semibold mt-1">Average Rating</p>
+            </div>
+        </div>
+    </section>
+    <!-- Partners Ribbon (Infinite Scroll with Logos) -->
+    <div class="bg-white border-y border-gray-100 py-8 logo-ticker-container">
+        <div class="logo-ticker cursor-pointer" aria-label="Our trusted material partners">
+            <div class="logo-entry">
+                <img src="assets/Ambuja-Cement-Logo.png" alt="Ambuja Cement" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+            <div class="logo-entry">
+                <img src="assets/tata-steel-logo.png" alt="Tata Steel" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+            <div class="logo-entry">
+                <img src="assets/Asian-Paints-Logo.png" alt="Asian Paints" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+            <div class="logo-entry">
+                <img src="assets/UltraTech-Cement-Logo.png" alt="UltraTech Cement" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+            <div class="logo-entry">
+                <img src="assets/Havells-Logo.png" alt="Havells" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+            <div class="logo-entry">
+                <img src="assets/Kajaria-Ceramics-Logo.png" alt="Kajaria" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+            <div class="logo-entry">
+                <img src="assets/Century-Ply-Logo.png" alt="CenturyPly" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+            <div class="logo-entry">
+                <img src="assets/JAQUAR-spirintoise-logo.png" alt="Jaquar" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+            <!-- Duplicated for continuous scroll -->
+            <div class="logo-entry">
+                <img src="assets/Ambuja-Cement-Logo.png" alt="Ambuja Cement" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+            <div class="logo-entry">
+                <img src="assets/Tata-Steel-Logo.png" alt="Tata Steel" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+            <div class="logo-entry">
+                <img src="assets/Asian-Paints-Logo.png" alt="Asian Paints" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+            <div class="logo-entry">
+                <img src="assets/UltraTech-Cement-Logo.png" alt="UltraTech Cement" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+            <div class="logo-entry">
+                <img src="assets/Havells-Logo.png" alt="Havells" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+            <div class="logo-entry">
+                <img src="assets/Kajaria-Ceramics-Logo.png" alt="Kajaria" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+            <div class="logo-entry">
+                <img src="assets/Century-Ply-Logo.png" alt="CenturyPly" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+            <div class="logo-entry">
+                <img src="assets/JAQUAR-spirintoise-logo.png" alt="Jaquar" class="logo-item h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300">
+                <span class="logo-separator" aria-hidden="true"><i class="ph-fill ph-gear"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h3 class="text-brand-primary font-bold tracking-wider uppercase text-sm mb-2">Our Core Services</h3>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark mb-4">What We Do Best</h2>
+                <p class="text-gray-600 text-lg">We provide end-to-end construction solutions, from <span class="font-semibold text-brand-dark">residential homes to large-scale commercial structures</span>. No project is too big or small for us.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white group-hover:bg-[#D9D7D7] rounded-2xl shadow-soft border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all group relative overflow-hidden flex flex-col">
+                    <div class="relative h-56 overflow-hidden bg-gray-100">
+                        <img src="assets/Everything-You-Need-to-Know-.webp" alt="New residential construction project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-10 shadow-md">Popular</div>
+                    </div>
+                    <div class="p-6 md:p-8 flex-1 flex flex-col relative bg-white group-hover:bg-[#D9D7D7] transition-colors">
+                        <div class="w-14 h-14 rounded-2xl bg-white text-brand-primary flex items-center justify-center -mt-14 mb-4 shadow-lg group-hover:bg-white group-hover:text-brand-primary transition-all duration-300 border border-gray-100 relative z-20 service-icon">
+                            <i class="ph ph-blueprint text-3xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Architectural Design & Planning</h4>
+                        <p class="text-gray-600 mb-6 leading-relaxed flex-1">We provide comprehensive architectural layouts and planning services to optimize space, aesthetics, and functionality for your project.</p>
+                        <a href="#contact" class="text-brand-primary font-semibold flex items-center gap-1 group-hover:text-brand-primary group-hover:gap-2 transition-all mt-auto book-service">Start Building <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white group-hover:bg-[#D9D7D7] rounded-2xl shadow-soft border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all group relative overflow-hidden flex flex-col">
+                    <div class="relative h-56 overflow-hidden bg-gray-100">
+                        <img src="assets/1716455290_structural-analysis.jpg" alt="Modern home renovation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6 md:p-8 flex-1 flex flex-col relative bg-white group-hover:bg-[#D9D7D7] transition-colors">
+                        <div class="w-14 h-14 rounded-2xl bg-white text-brand-primary flex items-center justify-center -mt-14 mb-4 shadow-lg group-hover:bg-white group-hover:text-brand-primary transition-all duration-300 border border-gray-100 relative z-20 service-icon">
+                            <i class="ph ph-compass-tool text-3xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Structural Drawing & Analysis</h4>
+                        <p class="text-gray-600 mb-6 leading-relaxed flex-1">Expert structural engineering services ensuring safety, durability, and compliance with all building codes and standards.</p>
+                        <a href="#contact" class="text-brand-primary font-semibold flex items-center gap-1 group-hover:text-brand-primary group-hover:gap-2 transition-all mt-auto book-service">Renovate Now <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white group-hover:bg-[#D9D7D7] rounded-2xl shadow-soft border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all group relative overflow-hidden flex flex-col">
+                    <div class="relative h-56 overflow-hidden bg-gray-100">
+                        <img src="assets/cb59a69d3aded4ba21bd2297978ec969.jpg" alt="Commercial office building project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6 md:p-8 flex-1 flex flex-col relative bg-white group-hover:bg-[#D9D7D7] transition-colors">
+                        <div class="w-14 h-14 rounded-2xl bg-white text-brand-primary flex items-center justify-center -mt-14 mb-4 shadow-lg group-hover:bg-white group-hover:text-brand-primary transition-all duration-300 border border-gray-100 relative z-20 service-icon">
+                            <i class="ph ph-cube text-3xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">2D & 3D Elevation</h4>
+                        <p class="text-gray-600 mb-6 leading-relaxed flex-1">Visualize your project before it's built with our highly detailed 2D drafting and realistic 3D elevation modeling services.</p>
+                        <a href="#contact" class="text-brand-primary font-semibold flex items-center gap-1 group-hover:text-brand-primary group-hover:gap-2 transition-all mt-auto book-service">Discuss Project <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white group-hover:bg-[#D9D7D7] rounded-2xl shadow-soft border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all group relative overflow-hidden flex flex-col">
+                    <div class="relative h-56 overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?q=80&w=800&auto=format&fit=crop" alt="Stylish interior design" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6 md:p-8 flex-1 flex flex-col relative bg-white group-hover:bg-[#D9D7D7] transition-colors">
+                        <div class="w-14 h-14 rounded-2xl bg-white text-brand-primary flex items-center justify-center -mt-14 mb-4 shadow-lg group-hover:bg-white group-hover:text-brand-primary transition-all duration-300 border border-gray-100 relative z-20 service-icon">
+                            <i class="ph ph-lightbulb text-3xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Interior Design (Residential & Commercial)</h4>
+                        <p class="text-gray-600 mb-6 leading-relaxed flex-1">Our in-house designers create beautiful and functional interiors for both residential homes and commercial business spaces.</p>
+                        <a href="#contact" class="text-brand-primary font-semibold flex items-center gap-1 group-hover:text-brand-primary group-hover:gap-2 transition-all mt-auto book-service">Get Design Ideas <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white group-hover:bg-[#D9D7D7] rounded-2xl shadow-soft border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all group relative overflow-hidden flex flex-col">
+                    <div class="relative h-56 overflow-hidden bg-gray-100">
+                        <img src="assets/360_F_1659898677_Cl3XpPSK3OiAc0Dd9jCdMhWgQPJRoUaz.jpg" alt="Structural repair work on a building" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6 md:p-8 flex-1 flex flex-col relative bg-white group-hover:bg-[#D9D7D7] transition-colors">
+                        <div class="w-14 h-14 rounded-2xl bg-white text-brand-primary flex items-center justify-center -mt-14 mb-4 shadow-lg group-hover:bg-white group-hover:text-brand-primary transition-all duration-300 border border-gray-100 relative z-20 service-icon">
+                            <i class="ph ph-road-horizon text-3xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Road Construction</h4>
+                        <p class="text-gray-600 mb-6 leading-relaxed flex-1">Durable and high-quality road construction paving the way for smooth transit. We manage projects of various scales meticulously.</p>
+                        <a href="#contact" class="text-brand-primary font-semibold flex items-center gap-1 group-hover:text-brand-primary group-hover:gap-2 transition-all mt-auto book-service">Get Inspection <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white group-hover:bg-[#D9D7D7] rounded-2xl shadow-soft border border-gray-100 hover:border-brand-primary/30 hover:shadow-xl transition-all group relative overflow-hidden flex flex-col">
+                    <div class="relative h-56 overflow-hidden bg-gray-100">
+                        <img src="assets/PIC4501Copy-2.jpg" alt="Project management meeting" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6 md:p-8 flex-1 flex flex-col relative bg-white group-hover:bg-[#D9D7D7] transition-colors">
+                        <div class="w-14 h-14 rounded-2xl bg-white text-brand-primary flex items-center justify-center -mt-14 mb-4 shadow-lg group-hover:bg-white group-hover:text-brand-primary transition-all duration-300 border border-gray-100 relative z-20 service-icon">
+                            <i class="ph ph-buildings text-3xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Building & Industrial Construction</h4>
+                        <p class="text-gray-600 mb-6 leading-relaxed flex-1">Complete construction services merging modern design and structural integrity. From foundation to finish, we handle everything.</p>
+                        <a href="#contact" class="text-brand-primary font-semibold flex items-center gap-1 group-hover:text-brand-primary group-hover:gap-2 transition-all mt-auto book-service">Learn More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-900 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#D97706" stroke-width="1"/></pattern></defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+
+        <!-- Decorative Blurs -->
+        <div class="absolute top-1/4 left-0 w-96 h-96 bg-brand-primary/20 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-sky-500/20 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 text-white">
+                <h3 class="font-bold tracking-wider uppercase text-sm mb-2 text-brand-accent">Our Portfolio</h3>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Featured Projects</h2>
+                <p class="text-gray-300 text-lg">We take pride in our craftsmanship and the successful completion of diverse projects across Kolkata. Here's a glimpse of our work.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-full mx-auto">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl shadow-2xl relative transform transition hover:-translate-y-2 border border-gray-100 overflow-hidden group">
+                    <img src="assets/1123c93d-6175-4df9-b723-0f7aeaf985f5.png" alt="Modern Residential Villa" class="w-full h-36 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2">Contemporary Riverside Residence</h4>
+                        <p class="text-gray-600 mb-4">An exclusive 3BHK luxury home situated along the Batanagar Riverside. This ground-up construction project showcases bespoke contemporary architecture, seamless smart home integration, and meticulously crafted premium finishes.</p>
+                        <div class="flex flex-wrap gap-2 text-sm">
+                            <span class="bg-sky-100 text-sky-700 font-semibold px-3 py-1 rounded-full">New Construction</span>
+                            <span class="bg-amber-100 text-amber-700 font-semibold px-3 py-1 rounded-full">Interior Architecture</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl shadow-2xl relative transform transition hover:-translate-y-2 border border-gray-100 overflow-hidden group">
+                    <img src="assets/550bf767-0b05-42b0-874b-ad7a7a9713ff.png" alt="Corporate Office Interior" class="w-full h-36 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2">Architectural Department Redesign</h4>
+                        <p class="text-gray-600 mb-4">Complete interior renovation for the university's architectural department, creating a vibrant, collaborative, and inspiring academic workspace for students and faculty.</p>
+                        <div class="flex flex-wrap gap-2 text-sm">
+                            <span class="bg-emerald-100 text-emerald-700 font-semibold px-3 py-1 rounded-full">Commercial</span>
+                            <span class="bg-purple-100 text-purple-700 font-semibold px-3 py-1 rounded-full">Renovation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl shadow-2xl relative transform transition hover:-translate-y-2 border border-gray-100 overflow-hidden group">
+                    <img src="assets/pexels-malama-mushitu-2148898721-34717012cropped.jpg" alt="Urban Roadway Development" class="w-full h-36 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2">Urban Roadway Development</h4>
+                        <p class="text-gray-600 mb-4">Comprehensive reconstruction and widening of key transit routes, engineered to improve daily traffic flow, safety, and community connectivity.</p>
+                        <div class="flex flex-wrap gap-2 text-sm">
+                            <span class="bg-rose-100 text-rose-700 font-semibold px-3 py-1 rounded-full">Infrastructure</span>
+                            <span class="bg-blue-100 text-blue-700 font-semibold px-3 py-1 rounded-full">Public Works</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Owner Section -->
+    <section id="about" class="py-20 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12 md:gap-16">
+                <div class="w-full lg:w-1/2 relative about-visual min-h-[400px] h-full flex items-center justify-center">
+                    <div class="image-wrapper">
+                        <div class="about-accent about-accent-secondary" aria-hidden="true"></div>
+                        <div class="about-accent about-accent-primary" aria-hidden="true"></div>
+                        <div class="h-full rounded-2xl overflow-hidden shadow-2xl relative z-10 border-4 border-white about-photo-card">
+                            <img src="assets/WhatsApp_Image_2026-05-14_at_8.39.38_PM-removebg-preview.png" alt="Founder - Prativa Enterprise" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 text-[#FFFFFF] text-base font-semibold text-right">
+                                ||  Founder ||
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 mt-8 lg:mt-0">
+                    <h3 class="text-brand-primary font-bold tracking-wider uppercase text-sm mb-2">About Us</h3>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark mb-6">A Legacy of Excellence and Expertise</h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        For over five years, Prativa Enterprise has stood as a cornerstone of quality construction in Kolkata. While the Prativa name represents our modern era of innovation, our foundational expertise spans more than two decades. Having operated under various successful banners for over 20 years, our leadership brings a lifetime of seasoned craftsmanship and industry knowledge to every site we manage.
+                    </p>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        We understand that any construction project is a significant investment. That is why we uphold a legacy of transparent communication, meticulous project management, and an unwavering commitment to excellence. Whether we are crafting a private family residence or developing a large-scale commercial complex, we handle every project with the deep professionalism that only twenty years of experience can provide.
+                    </p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-gray-700 font-bold">
+                            <i class="ph-fill ph-check-circle text-[#44759C] text-xl"></i> Serving all pin codes in Kolkata & Suburbs
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 font-bold">
+                            <i class="ph-fill ph-check-circle text-[#44759C] text-xl"></i> High-Quality Building Materials & Modern Equipment
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 font-bold">
+                            <i class="ph-fill ph-check-circle text-[#44759C] text-xl"></i> Trade License NO.- 0917P22412251405
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 font-bold">
+                            <i class="ph-fill ph-check-circle text-[#44759C] text-xl"></i> GSTIN:- 19BFQPP8033Q1ZC
+                        </li>
+                    </ul>
+
+                    <a href="https://wa.me/919147371778" target="_blank" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebd5b] text-white px-6 py-3 rounded-xl font-bold transition-colors shadow-lg shadow-[#25D366]/30 transform hover:-translate-y-0.5 transition-transform">
+                        <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
+                        Message Us Directly
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 relative">
+                <!-- Google integration badge -->
+                <div class="inline-flex flex-wrap items-center justify-center gap-2 md:gap-3 bg-yellow-100 px-4 py-2 md:px-6 md:py-2 rounded-full shadow-md border border-yellow-300 mb-6 text-sm md:text-base">
+                    <i class="ph-fill ph-medal text-[#DA7907] text-lg"></i>
+                    <span class="font-bold text-gray-800">4.9/5 Average Rating</span>
+                    <div class="flex text-amber-500 text-sm">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                </div>
+                
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark mb-4">What Our Clients Say</h2>
+                <p class="text-gray-600 text-lg">Don't just take our word for it. Hear from our happy clients across Kolkata who have trusted us with their vision.</p>
+            </div>
+        </div>
+
+        <!-- Infinite Scrolling Review Carousel -->
+        <div class="review-ticker-container w-full">
+            <div class="review-ticker">
+                <!-- Review 1 -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"Prativa Enterprise built our dream home in Salt Lake. The quality of work, attention to detail, and transparent communication were outstanding. They finished on time and within budget. Highly recommended!"</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-brand-primary flex items-center justify-center text-white font-bold">R</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Rahul Das</h4>
+                            <p class="text-xs text-gray-500">Salt Lake City</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"We hired them to renovate our 20-year-old apartment in Tollygunge. The transformation is incredible! The team was professional, clean, and delivered a modern, beautiful space for our family."</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white font-bold">P</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Priyanka Ghosh</h4>
+                            <p class="text-xs text-gray-500">Tollygunge</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"Our office space in Ballygunge needed a complete interior overhaul. Prativa Enterprise managed the project flawlessly, creating a functional and stylish environment for our employees. Very satisfied."</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold">K</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Kunal Chatterjee</h4>
+                            <p class="text-xs text-gray-500">Ballygunge</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"Transparent pricing is what I loved. They provided a detailed quote upfront, and there were no hidden costs. The quality of materials used was top-notch. Rare to find such honesty nowadays."</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center text-white font-bold">M</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Megha Roy</h4>
+                            <p class="text-xs text-gray-500">Dum Dum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"We awarded them the contract for our new commercial building in New Town. They handled everything from structural work to finishing. The project was a huge success. Top notch service!"</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white font-bold">S</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Sneha Mukherjee</h4>
+                            <p class="text-xs text-gray-500">New Town</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"They did the structural repair and waterproofing for our ancestral home in Behala. Their team was knowledgeable and saved our property from further damage. Excellent work."</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-brand-dark flex items-center justify-center text-white font-bold">A</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Arijit Sen</h4>
+                            <p class="text-xs text-gray-500">Behala</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 7 -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"The interior design for our cafe in Howrah was done by their team. They created a wonderful ambiance that our customers love. Absolute professionals from start to finish."</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-white font-bold">V</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Vikram Singh</h4>
+                            <p class="text-xs text-gray-500">Howrah</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 8 (New) -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"We needed an extension to our house in Garia. Prativa Enterprise built a beautiful new room for us that blends perfectly with the old structure. Very professional work."</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold">A</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Amitava Bose</h4>
+                            <p class="text-xs text-gray-500">Garia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Set 2 (Duplicated for Infinite Loop) -->
+                <!-- Review 1 -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"Prativa Enterprise built our dream home in Salt Lake. The quality of work, attention to detail, and transparent communication were outstanding. They finished on time and within budget. Highly recommended!"</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-brand-primary flex items-center justify-center text-white font-bold">R</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Rahul Das</h4>
+                            <p class="text-xs text-gray-500">Salt Lake City</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"We hired them to renovate our 20-year-old apartment in Tollygunge. The transformation is incredible! The team was professional, clean, and delivered a modern, beautiful space for our family."</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white font-bold">P</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Priyanka Ghosh</h4>
+                            <p class="text-xs text-gray-500">Tollygunge</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"Our office space in Ballygunge needed a complete interior overhaul. Prativa Enterprise managed the project flawlessly, creating a functional and stylish environment for our employees. Very satisfied."</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold">K</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Kunal Chatterjee</h4>
+                            <p class="text-xs text-gray-500">Ballygunge</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"Transparent pricing is what I loved. They provided a detailed quote upfront, and there were no hidden costs. The quality of materials used was top-notch. Rare to find such honesty nowadays."</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center text-white font-bold">M</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Megha Roy</h4>
+                            <p class="text-xs text-gray-500">Dum Dum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"We awarded them the contract for our new commercial building in New Town. They handled everything from structural work to finishing. The project was a huge success. Top notch service!"</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white font-bold">S</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Sneha Mukherjee</h4>
+                            <p class="text-xs text-gray-500">New Town</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"They did the structural repair and waterproofing for our ancestral home in Behala. Their team was knowledgeable and saved our property from further damage. Excellent work."</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-brand-dark flex items-center justify-center text-white font-bold">A</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Arijit Sen</h4>
+                            <p class="text-xs text-gray-500">Behala</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 7 -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"The interior design for our cafe in Howrah was done by their team. They created a wonderful ambiance that our customers love. Absolute professionals from start to finish."</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-white font-bold">V</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Vikram Singh</h4>
+                            <p class="text-xs text-gray-500">Howrah</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 8 (New) -->
+                <div class="review-card bg-white p-8 rounded-2xl shadow-soft border border-gray-100 relative transition-transform duration-300 flex flex-col justify-between hover:-translate-y-2 cursor-pointer" onclick="openReviewModal(this)">
+                    <i class="ph-fill ph-quotes text-5xl absolute top-6 right-6 z-0"></i>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6 leading-relaxed text-sm">"We needed an extension to our house in Garia. Prativa Enterprise built a beautiful new room for us that blends perfectly with the old structure. Very professional work."</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold">A</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Amitava Bose</h4>
+                            <p class="text-xs text-gray-500">Garia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (Objection Handling) -->
+    <section class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-brand-dark mb-3">Frequently Asked Questions</h2>
+                <p class="text-gray-600">Got doubts? We believe in 100% transparency.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="faq-item bg-gray-50 rounded-xl border border-gray-200 overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+                    <div class="px-6 py-5 flex justify-between items-center">
+                        <h4 class="font-bold text-gray-800">What types of projects do you handle?</h4>
+                        <i class="ph-bold ph-caret-down text-brand-primary faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-6 text-gray-600">
+                        We handle a wide range of projects, including <strong>new residential construction, commercial buildings, complete home renovations, interior design, and structural repairs</strong>. No project is too big or small.
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="faq-item bg-gray-50 rounded-xl border border-gray-200 overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+                    <div class="px-6 py-5 flex justify-between items-center">
+                        <h4 class="font-bold text-gray-800">Are you a licensed and insured company?</h4>
+                        <i class="ph-bold ph-caret-down text-brand-primary faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-6 text-gray-600">
+                        Yes, absolutely. Prativa Enterprise is a <strong>fully licensed and insured general contractor</strong> in Kolkata. We adhere to all local building codes and safety standards to ensure your project is secure and compliant.
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="faq-item bg-gray-50 rounded-xl border border-gray-200 overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+                    <div class="px-6 py-5 flex justify-between items-center">
+                        <h4 class="font-bold text-gray-800">How is the project cost determined?</h4>
+                        <i class="ph-bold ph-caret-down text-brand-primary faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-6 text-gray-600">
+                        We provide a <strong>detailed, transparent quote</strong> after an initial consultation and site assessment. The cost depends on the project scope, materials selected, labor involved, and required permits. We ensure there are no hidden charges.
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="faq-item bg-gray-50 rounded-xl border border-gray-200 overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+                    <div class="px-6 py-5 flex justify-between items-center">
+                        <h4 class="font-bold text-gray-800">How do you ensure the project stays on schedule?</h4>
+                        <i class="ph-bold ph-caret-down text-brand-primary faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-6 text-gray-600">
+                        We use dedicated project management to create a realistic timeline. A <strong>dedicated project manager</strong> will provide you with regular updates and ensure all milestones are met, coordinating between our teams and suppliers to prevent delays.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Booking Form Section -->
+    <section id="contact" class="py-20 bg-brand-dark relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
+            <div class="absolute -top-40 -right-40 w-96 h-96 rounded-full border-[20px] border-white/50"></div>
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 rounded-full border-[20px] border-brand-primary"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+                
+                <!-- Contact Info Side -->
+                <div class="p-8 md:p-10 lg:p-12 text-white lg:w-2/5 flex flex-col justify-between relative overflow-hidden bg-[#1F54A1]">
+                    <div class="absolute bottom-0 right-0 transform translate-x-1/4 translate-y-1/4 opacity-10">
+                        <i class="ph-fill ph-buildings text-[200px]"></i>
+                    </div>
+
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-extrabold mb-4">Start Your Project Today</h3>
+                        <p class="text-gray-300 mb-8 text-lg">Ready to bring your vision to life? Call us directly or fill out the form for a free, no-obligation consultation.</p>
+                        
+                        <div class="space-y-6">
+                            <a href="tel:+919874494195" class="flex items-center gap-4 hover:translate-x-2 transition-transform">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+                                    <i class="ph-fill ph-phone text-2xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm font-medium">Call Us Now</p>
+                                    <p class="text-xl font-bold">9874494195 / 9147371778</p>
+                                </div>
+                            </a>
+                            
+                            <a href="https://wa.me/919147371778" class="flex items-center gap-4 hover:translate-x-2 transition-transform">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+                                    <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm font-medium">WhatsApp</p>
+                                    <p class="text-xl font-bold">Message Us</p>
+                                </div>
+                            </a>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+                                    <i class="ph-fill ph-map-pin text-2xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm font-medium">Service Area</p>
+                                    <p class="text-lg font-semibold">All Over Kolkata & Suburbs</p>
+                                </div>
+                            </div>
+
+                            <a href="mailto:prativaenterprise2026@gmail.com" class="flex items-center gap-4 hover:translate-x-2 transition-transform">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+                                    <i class="ph-fill ph-envelope text-2xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm font-medium">Email Us</p>
+                                    <p class="text-lg font-bold">prativaenterprise2026@gmail.com</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 pt-8 border-t border-white/20 relative z-10 flex flex-wrap gap-3">
+                        <div class="contact-trust-pill bg-white/10 rounded-lg px-3 py-2 text-sm font-bold flex items-center gap-2">
+                            <i class="ph-fill ph-shield-check text-green-400"></i>
+                            <span>Licensed & Insured</span>
+                        </div>
+                        <div class="contact-trust-pill contact-trust-pill--delay bg-white/10 rounded-lg px-3 py-2 text-sm font-bold flex items-center gap-2">
+                            <i class="ph-fill ph-clock text-yellow-300"></i>
+                            <span>On-Time Guarantee</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Form Side -->
+                <div class="p-8 md:p-10 lg:p-12 lg:w-3/5 relative form-right-column">                    
+
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold form-title">Book a Service Online</h3>
+                    </div>
+                    
+                    <form id="bookingForm" class="space-y-5" onsubmit="submitForm(event)">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div class="relative">
+                                <label class="block text-sm font-bold text-gray-700 mb-1">Your Name</label>
+                                <div class="relative">
+                                    <i class="ph ph-user absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl"></i>
+                                    <input type="text" name="name" required class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 shadow-sm focus:ring-2 focus:ring-brand-primary focus:border-brand-primary outline-none transition-colors bg-white focus:bg-amber-50/30" placeholder="John Doe">
+                                </div>
+                            </div>
+                            <div class="relative">
+                                <label class="block text-sm font-bold text-gray-700 mb-1">Phone Number</label>
+                                <div class="relative">
+                                    <i class="ph ph-phone absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl"></i>
+                                    <input type="tel" name="phone" required pattern="[0-9]{10}" class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 shadow-sm focus:ring-2 focus:ring-brand-primary focus:border-brand-primary outline-none transition-colors bg-white focus:bg-amber-50/30" placeholder="10-digit number">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1">Service Required</label>
+                                <div class="relative">
+                                    <i class="ph ph-wrench absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl"></i>
+                                    <select name="service" required class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 shadow-sm focus:ring-2 focus:ring-brand-primary focus:border-brand-primary outline-none transition-colors bg-white focus:bg-amber-50/30 appearance-none">
+                                        <option value="" disabled selected>Select a service</option>
+                                    <option value="Architectural Design & Planning">Architectural Design & Planning</option>
+                                    <option value="Structural Drawing & Analysis">Structural Drawing & Analysis</option>
+                                    <option value="2D & 3D Elevation">2D & 3D Elevation</option>
+                                    <option value="Interior Design">Interior Design (Residential & Commercial)</option>
+                                    <option value="Road Construction">Road Construction</option>
+                                    <option value="Construction & Design">Building & Industrial Construction</option>
+                                    </select>
+                                    <i class="ph ph-caret-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1">Preferred Start Date <span class="font-medium text-gray-400">(Optional)</span></label>
+                                <div class="relative">
+                                    <i class="ph ph-calendar absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl"></i>
+                                    <input type="date" name="date" class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 shadow-sm focus:ring-2 focus:ring-brand-primary focus:border-brand-primary outline-none transition-colors bg-white focus:bg-amber-50/30 text-gray-600">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">Message <span class="font-medium text-gray-400">(Optional)</span></label>
+                            <div class="relative">
+                                <i class="ph ph-chat-text absolute left-3 top-4 text-gray-400 text-xl"></i>
+                                <textarea name="message" rows="4" class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 shadow-sm focus:ring-2 focus:ring-brand-primary focus:border-brand-primary outline-none transition-colors bg-white focus:bg-amber-50/30 resize-y" placeholder="Briefly describe your project requirements or questions here..."></textarea>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">Your Area in Kolkata</label>
+                            <div class="relative">
+                                <i class="ph ph-map-pin absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl"></i>
+                                <input type="text" name="area" required class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 shadow-sm focus:ring-2 focus:ring-brand-primary focus:border-brand-primary outline-none transition-colors bg-white focus:bg-amber-50/30" placeholder="e.g. Salt Lake, New Town, Behala...">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full form-submit-btn text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 mt-6 text-lg">
+                            Get My Free Quote <i class="ph-bold ph-paper-plane-right"></i>
+                        </button>
+
+                        
+                        
+                        <!-- Success Message -->
+                        <div id="successMsg" class="hidden mt-4 p-4 bg-green-50 text-green-800 rounded-lg border border-green-200 flex items-center gap-3">
+                            <i class="ph-fill ph-check-circle text-2xl"></i>
+                            <p class="font-medium">Thank you! Your request is received. Our team will contact you shortly.</p>
+                        </div>
+
+                        <!-- Error Message -->
+                        <div id="errorMsg" class="hidden mt-4 p-4 bg-red-50 text-red-700 rounded-lg border border-red-200 flex items-center gap-3">
+                            <i class="ph-fill ph-warning-circle text-2xl"></i>
+                            <p class="font-medium">We could not send your request right now. Please try again or call directly.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Click-to-Copy -->
+    <footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-8 text-center md:text-left relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                
+                <div class="flex flex-col items-center md:items-start">
+                    <div class="flex items-center gap-3 mb-4"> 
+                        <img src="assets/Only Logo circle Color BG.png" alt="Prativa Enterprise Logo" class="h-16 w-16 object-contain">
+                        <h2 class="font-bold text-xl text-brand-dark">Prativa Enterprise</h2>
+                    </div>
+                    <p class="text-gray-600 mb-4 max-w-sm">Kolkata's trusted construction partner for over 20 years. We build with a commitment to quality, integrity, and customer satisfaction.</p>
+                </div>
+
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="font-bold text-gray-800 mb-4 text-lg">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li><a href="#services" class="hover:text-brand-primary transition-colors">All Services</a></li>
+                        <li><a href="#projects" class="hover:text-brand-primary transition-colors">Our Projects</a></li>
+                        <li><a href="#about" class="hover:text-brand-primary transition-colors">About Us</a></li>
+                        <li><a href="#contact" class="hover:text-brand-primary transition-colors">Get a Quote</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col items-center md:items-start relative">
+                    <h4 class="font-bold text-gray-800 mb-4 text-lg">Contact Us</h4>
+                    <ul class="space-y-3 text-gray-600 text-sm">
+                        <li class="flex items-start gap-3 cursor-pointer group" onclick="copyToClipboard('Kolkata, West Bengal', 'Address copied!')">
+                            <i class="ph-fill ph-map-pin text-brand-primary text-xl mt-0.5 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-left group-hover:text-brand-primary transition-colors">Serving All Over Kolkata,<br>West Bengal, India</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="ph-fill ph-phone text-brand-primary text-xl"></i>
+                            <!-- Click to copy icon for desktop -->
+                            <a href="tel:+919874494195" class="hover:text-brand-primary font-bold text-gray-800 text-lg">9874494195</a>
+                            <i class="ph ph-copy text-gray-400 hover:text-brand-primary cursor-pointer hidden md:block" onclick="copyToClipboard('9874494195', 'Phone number copied!')"></i>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="ph-fill ph-envelope text-brand-primary text-xl"></i>
+                            <span class="hover:text-brand-primary cursor-pointer transition-colors" onclick="copyToClipboard('prativaenterprise2026@gmail.com', 'Email copied!')">prativaenterprise2026@gmail.com</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="ph-fill ph-instagram-logo text-brand-primary text-xl"></i>
+                            <a href="https://instagram.com/PRATIVAENTERPRISE2026" target="_blank" class="hover:text-brand-primary font-bold text-gray-800 text-md">@PRATIVAENTERPRISE2026</a>
+                        </li>
+                    </ul>
+                    <!-- Toast Notification -->
+                    <div id="copyToast" class="absolute top-0 right-0 bg-gray-800 text-white text-sm py-1 px-3 rounded-lg opacity-0 pointer-events-none">Copied!</div>
+                </div>
+
+            </div>
+            
+            <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row items-center justify-between text-gray-500 text-sm">
+                <p>&copy; <span id="year"></span> Soham Sarkar. All rights reserved.</p>
+                <p class="mt-2 md:mt-0 font-medium text-brand-primary">100% Satisfaction Guaranteed.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILE STICKY FOOTER CTA (High Conversion) -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-white flex shadow-[0_-10px_20px_-5px_rgba(0,0,0,0.1)] z-50 border-t border-gray-100">
+        <a href="tel:+919874494195" class="flex-1 flex flex-col items-center justify-center py-3 text-brand-dark border-r border-gray-200 hover:bg-gray-50 active:bg-gray-100">
+            <i class="ph-fill ph-phone text-xl mb-0.5"></i>
+            <span class="text-xs font-bold">Call Now</span>
+        </a>
+        <a href="https://wa.me/919147371778" class="flex-1 flex flex-col items-center justify-center py-3 bg-[#25D366] text-white hover:bg-[#1ebd5b] active:bg-[#1ebd5b]">
+            <i class="ph-fill ph-whatsapp-logo text-xl mb-0.5"></i>
+            <span class="text-xs font-bold">WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- FLOATING WHATSAPP FOR DESKTOP ONLY -->
+    <a href="https://wa.me/919147371778" target="_blank" class="hidden md:flex fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-[0_4px_14px_0_rgba(37,211,102,0.39)] hover:shadow-[0_6px_20px_rgba(37,211,102,0.23)] hover:scale-110 transition-all z-50 items-center justify-center group animate-bounce" style="animation: bounce 2s infinite, pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;">
+        <i class="ph-fill ph-whatsapp-logo text-3xl"></i>
+        <span class="absolute right-full mr-4 bg-gray-800 text-white text-sm font-medium py-1 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            Chat on WhatsApp
+        </span>
+    </a>
+
+    <!-- Review Modal -->
+    <div id="reviewModalOverlay" class="fixed inset-0 z-[70] hidden items-center justify-center p-4 sm:p-6" aria-hidden="true">
+        <div id="reviewModalBackdrop" class="absolute inset-0 bg-slate-950/45 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+        <div class="relative z-10 w-full max-w-4xl flex items-center justify-center pointer-events-none">
+            <article id="reviewModalCard" class="review-modal-card pointer-events-auto w-full max-w-2xl rounded-[32px] border border-white/35 bg-white/20 text-slate-900 shadow-[0_24px_64px_rgba(15,23,42,0.24)] backdrop-blur-xl overflow-hidden opacity-0" role="dialog" aria-modal="true" aria-labelledby="reviewModalName">
+                <button id="reviewModalClose" type="button" class="absolute right-4 top-4 z-10 h-11 w-11 rounded-full border border-white/60 bg-white/75 text-slate-700 shadow-lg backdrop-blur-md transition hover:scale-105 hover:bg-white" aria-label="Close review modal" data-review-modal-close>
+                    <i class="ph-bold ph-x text-xl"></i>
+                </button>
+                <div class="relative overflow-hidden px-6 pb-6 pt-8 md:px-8 md:pb-8 md:pt-10">
+                    <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-br from-sky-200/45 via-white/10 to-amber-100/30 pointer-events-none"></div>
+                    <div class="relative z-10">
+                        <div class="mb-6 flex items-start gap-4 pr-14">
+                            <div class="flex items-center gap-3">
+                                <div id="reviewModalAvatar" class="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-primary text-xl font-bold text-white shadow-lg shadow-amber-200/60">R</div>
+                                <div>
+                                    <p id="reviewModalName" class="text-lg font-extrabold text-slate-900">Rahul Das</p>
+                                    <p id="reviewModalLocation" class="text-sm font-medium text-slate-500">Salt Lake City</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative rounded-[28px] border border-white/40 bg-white/45 p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] backdrop-blur-xl md:p-8">
+                            <i class="ph-fill ph-quotes absolute right-6 top-5 text-5xl text-brand-primary/80"></i>
+                            <div id="reviewModalStars" class="mb-4 flex items-center gap-1 text-base text-amber-500">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                            </div>
+                            <p id="reviewModalText" class="pr-10 text-base italic leading-8 text-slate-700 md:text-lg">Prativa Enterprise built our dream home in Salt Lake. The quality of work and attention to detail were outstanding!</p>
+                        </div>
+                        <div class="mt-5 flex items-center justify-between gap-4 text-sm font-semibold text-slate-500">
+                            <p>Swipe left for previous, right for next.</p>
+                            <p>Swipe down or tap X to close.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="review-modal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
