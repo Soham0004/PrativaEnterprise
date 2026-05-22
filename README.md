@@ -15,7 +15,7 @@ The goal of this project was to create a premium, trustworthy online presence th
 ## 🛠️ Tech Stack
 * **HTML5:** Semantic markup for accessibility and SEO.
 * **CSS3:** Custom variables, advanced positioning (absolute/relative rendering context), animations, and responsive media queries.
-* **JavaScript:** *(Include if you used JS for a mobile menu, form validation, or scroll animations)*
+* **JavaScript:** *JS for a mobile menu, form validation, and scroll animations*
 * **Deployment:** Live hosting via Netlify.
 
 ## 🚀 Live Demo
