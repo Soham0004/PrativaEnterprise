@@ -945,7 +945,7 @@
                                 </div>
                                 <div>
                                     <p class="text-gray-400 text-sm font-medium">Email Us</p>
-                                    <p class="text-lg font-bold">prativaenterprise2026@gmail.com</p>
+                                    <p class="text-sm font-bold">prativaenterprise2026@gmail.com</p>
                                 </div>
                             </a>
                         </div>
@@ -984,7 +984,11 @@
                                 <label class="block text-sm font-bold text-gray-700 mb-1">Phone Number</label>
                                 <div class="relative">
                                     <i class="ph ph-phone absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl"></i>
-                                    <input type="tel" name="phone" required pattern="[0-9]{10}" class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 shadow-sm focus:ring-2 focus:ring-brand-primary focus:border-brand-primary outline-none transition-colors bg-white focus:bg-amber-50/30" placeholder="10-digit number">
+                                    <input type="tel" id="phoneInput" name="phone" required class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 shadow-sm focus:ring-2 focus:ring-brand-primary focus:border-brand-primary outline-none transition-colors bg-white focus:bg-amber-50/30" placeholder="10-digit number" maxlength="10" inputmode="numeric">
+                                </div>
+                                <div id="phoneError" class="hidden mt-2 p-3 bg-red-50 text-red-700 rounded-lg border border-red-200 flex items-center gap-2 text-sm">
+                                    <i class="ph-fill ph-warning-circle"></i>
+                                    <p class="font-medium">Phone number must be exactly 10 digits</p>
                                 </div>
                             </div>
                         </div>
