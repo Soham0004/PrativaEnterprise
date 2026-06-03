@@ -426,6 +426,26 @@ body {
     }
 }
 
+/* Zoom Focus - Background Blur Overlay */
+.comment-zoom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.5);
+    backdrop-filter: blur(8px);
+    z-index: 9998;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.comment-zoom-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /* Hide scrollbar for review slider */
 .hide-scrollbar::-webkit-scrollbar {
     display: none;
@@ -442,6 +462,9 @@ body {
     white-space: normal;
     background-color: #a9c8d766 !important;
     transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
 
 @media (min-width: 640px) {
@@ -449,11 +472,52 @@ body {
         width: 350px;
     }
 }
+
 .review-card:hover {
     transform: translateY(-4px);
     background-color: #ffffff;
     border-color: #7fb7f2;
     box-shadow: 0 22px 44px -18px rgba(2, 132, 199, 0.2);
+}
+
+.review-card.zoom-focus {
+    position: fixed;
+    width: 90vw;
+    max-width: 600px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) !important;
+    z-index: 9999;
+    box-shadow: 0 40px 80px -20px rgba(15, 23, 42, 0.4);
+    animation: zoomInCenter 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: auto;
+}
+
+@keyframes zoomInCenter {
+    from {
+        transform: translate(-50%, -50%) scale(0.85);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomOutCenter {
+    from {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(0.85);
+        opacity: 0;
+    }
+}
+
+.review-card.zoom-focus.closing {
+    animation: zoomOutCenter 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .review-card .ph-quotes {
@@ -987,4 +1051,72 @@ body.review-modal-open .review-ticker {
 
 .form-title {
     color: #333333;
+}
+
+/* Mobile responsive fix for contact email overlap */
+@media (max-width: 1024px) {
+    #contact .bg-\[#1F54A1\] a {
+        gap: 1rem;
+    }
+    
+    #contact .bg-\[#1F54A1\] a > div:last-child {
+        min-width: 0;
+        flex: 1;
+    }
+    
+    #contact .bg-\[#1F54A1\] a[href*="mailto"] > div:last-child p:last-child {
+        word-break: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
+        font-size: 0.95rem;
+        line-height: 1.3;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact .bg-\[#1F54A1\] a {
+        gap: 0.75rem;
+    }
+    
+    #contact .bg-\[#1F54A1\] a > div:last-child {
+        min-width: 0;
+        overflow: hidden;
+    }
+    
+    #contact .bg-\[#1F54A1\] a > div:last-child p {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
+    }
+    
+    #contact .bg-\[#1F54A1\] a > div:last-child p:last-child {
+        font-size: 0.875rem;
+        max-width: 100%;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact .bg-\[#1F54A1\] a {
+        gap: 0.5rem;
+    }
+    
+    #contact .bg-\[#1F54A1\] a > div:first-child {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+    
+    #contact .bg-\[#1F54A1\] a > div:first-child i {
+        font-size: 1.25rem;
+    }
+    
+    #contact .bg-\[#1F54A1\] a > div:last-child p:first-child {
+        font-size: 0.75rem;
+    }
+    
+    #contact .bg-\[#1F54A1\] a > div:last-child p:last-child {
+        font-size: 0.75rem;
+        line-height: 1.3;
+    }
 }
