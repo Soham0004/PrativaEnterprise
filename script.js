@@ -53,11 +53,20 @@ async function submitForm(e) {
     const btn = form.querySelector('button[type="submit"]');
     const successMsg = document.getElementById('successMsg');
     const errorMsg = document.getElementById('errorMsg');
+    const phoneInput = document.getElementById('phoneInput');
+    const phoneError = document.getElementById('phoneError');
     const originalText = btn.innerHTML;
     const googleScriptUrl = GOOGLE_SCRIPT_WEB_APP_URL.trim();
 
     setFormAlert(successMsg, false);
     setFormAlert(errorMsg, false);
+    setFormAlert(phoneError, false);
+
+    const phoneValue = phoneInput.value.trim();
+    if (phoneValue.length !== 10 || !/^\d{10}$/.test(phoneValue)) {
+        setFormAlert(phoneError, true);
+        return;
+    }
 
     if (!googleScriptUrl) {
         setFormAlert(errorMsg, true);
@@ -143,6 +152,17 @@ function copyToClipboard(text, msg) {
             toast.classList.remove('copy-toast');
         }, 2000);
     }
+}
+
+// Phone Input - Restrict to numbers only
+const phoneInput = document.getElementById('phoneInput');
+if (phoneInput) {
+    phoneInput.addEventListener('input', function(e) {
+        this.value = this.value.replace(/[^0-9]/g, '');
+        if (this.value.length > 10) {
+            this.value = this.value.slice(0, 10);
+        }
+    });
 }
 
 // FAQ Accordion - handles the toggling via onclick on the .faq-item element
@@ -259,3 +279,116 @@ if (counterTrigger) {
 }
 
 createParticles();
+
+// ====================================
+// Horizontal Scrolling Comments with Zoom-Focus and Background Blur
+// ====================================
+
+const CommentZoomFocus = {
+    overlayId: 'commentZoomOverlay',
+    activeCard: null,
+    isAnimating: false,
+
+    init() {
+        this.createOverlay();
+        this.bindReviewCards();
+        this.bindOverlay();
+    },
+
+    createOverlay() {
+        if (document.getElementById(this.overlayId)) {
+            return;
+        }
+        const overlay = document.createElement('div');
+        overlay.id = this.overlayId;
+        overlay.className = 'comment-zoom-overlay';
+        document.body.appendChild(overlay);
+    },
+
+    bindReviewCards() {
+        document.addEventListener('click', (e) => {
+            const reviewCard = e.target.closest('.review-card');
+            if (reviewCard && !this.activeCard) {
+                e.stopPropagation();
+                this.zoomCard(reviewCard);
+            }
+        });
+    },
+
+    bindOverlay() {
+        const overlay = document.getElementById(this.overlayId);
+        if (overlay) {
+            overlay.addEventListener('click', () => this.closeZoom());
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.activeCard) {
+                this.closeZoom();
+            }
+        });
+    },
+
+    zoomCard(card) {
+        if (this.isAnimating || this.activeCard) {
+            return;
+        }
+
+        this.isAnimating = true;
+        this.activeCard = card;
+
+        const overlay = document.getElementById(this.overlayId);
+        const clonedCard = card.cloneNode(true);
+        clonedCard.classList.remove('review-card');
+        clonedCard.classList.add('review-card', 'zoom-focus');
+        clonedCard.style.position = 'fixed';
+
+        document.body.appendChild(clonedCard);
+        overlay.classList.add('active');
+
+        // Prevent background scroll
+        document.body.style.overflow = 'hidden';
+
+        // Re-enable modal interactions
+        clonedCard.addEventListener('click', (e) => {
+            if (e.target === clonedCard) {
+                this.closeZoom();
+            }
+        });
+
+        setTimeout(() => {
+            this.isAnimating = false;
+        }, 400);
+    },
+
+    closeZoom() {
+        if (this.isAnimating || !this.activeCard) {
+            return;
+        }
+
+        this.isAnimating = true;
+
+        const overlay = document.getElementById(this.overlayId);
+        const zoomedCards = document.querySelectorAll('.review-card.zoom-focus');
+
+        zoomedCards.forEach((card) => {
+            card.classList.add('closing');
+            setTimeout(() => {
+                card.remove();
+            }, 300);
+        });
+
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+        this.activeCard = null;
+
+        setTimeout(() => {
+            this.isAnimating = false;
+        }, 400);
+    }
+};
+
+// Initialize zoom-focus feature on DOM ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => CommentZoomFocus.init());
+} else {
+    CommentZoomFocus.init();
+}
